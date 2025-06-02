@@ -59,9 +59,9 @@ Each repository has a dedicated page offering:
 
 ## 🛠 Tech Stack
 
-- **Backend**: Spring Boot, Spring Web
+- **Backend**: Spring Boot, Spring Web, Spring Security
 - **Database**: H2 (in-memory for development)
-- **Templating**: Thymeleaf
+- **Templating**: Thymeleaf, Bootstrap
 - **Build Tool**: Gradle
 
 ---
