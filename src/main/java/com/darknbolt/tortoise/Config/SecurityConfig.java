@@ -11,7 +11,7 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(request -> request
-                .requestMatchers("/images").permitAll()
+                .requestMatchers("/images/Tortoise.png").permitAll()
                 .anyRequest().authenticated());
         http.formLogin(login -> login.loginPage("/login").permitAll());
         http.csrf(csrf -> csrf.disable());

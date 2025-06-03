@@ -1,16 +1,16 @@
 INSERT INTO
     AppUser (username, email, password)
 VALUES
-    ('darknbolt', '1234', 'test@email.com');
+    ('darknbolt', 'test@email.com', '{noop}1234');
 
 INSERT INTO
     UserRole(name)
 VALUES
-    ('Unregistered User'),
-    ('Reader'),
-    ('Publisher'),
-    ('Librarian'),
-    ('Administrator');
+    ('Explorer'),
+    ('Reporter'),
+    ('Developer'),
+    ('Admin'),
+    ('Owner');
 
 
 INSERT INTO
