@@ -2,7 +2,7 @@ spring:
   application:
     name: Tortoise
   datasource:
-    url: jdbc:h2:mem:tortoise
+    url: jdbc:h2:file:./data/tortoise-db
     username: admin
     password: password
     driver-class-name: org.h2.Driver
