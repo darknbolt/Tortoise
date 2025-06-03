@@ -13,7 +13,7 @@ spring:
       ddl-auto: update
   sql:
     init:
-      mode: always
+      mode: embedded
       schema-locations: classpath:sql/schema.sql
       data-locations: classpath:sql/data.sql
   h2:

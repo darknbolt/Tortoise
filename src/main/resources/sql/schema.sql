@@ -1,7 +1,3 @@
-DROP TABLE IF EXISTS User_UserRole;
-DROP TABLE IF EXISTS AppUser;
-DROP TABLE IF EXISTS UserRole;
-
 CREATE TABLE AppUser(
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
@@ -10,18 +6,18 @@ CREATE TABLE AppUser(
 );
 
 CREATE TABLE UserRole(
-                         id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                         name VARCHAR(255) NOT NULL
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE User_UserRole(
-                              user_ID BIGINT,
-                              user_Role_ID BIGINT,
-                              PRIMARY KEY (user_ID, user_Role_ID),
-                              FOREIGN KEY (user_ID) REFERENCES AppUser(id)
-                                  ON DELETE CASCADE
-                                  ON UPDATE CASCADE,
-                              FOREIGN KEY (user_Role_ID) REFERENCES UserRole(id)
-                                  ON DELETE CASCADE
-                                  ON UPDATE CASCADE
+    user_ID BIGINT,
+    user_Role_ID BIGINT,
+    PRIMARY KEY (user_ID, user_Role_ID),
+    FOREIGN KEY (user_ID) REFERENCES AppUser(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    FOREIGN KEY (user_Role_ID) REFERENCES UserRole(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
 );
