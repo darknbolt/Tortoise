@@ -19,6 +19,13 @@ public class User {
     @ManyToMany(fetch = FetchType.EAGER)
     private Set<UserRole> roles = new HashSet<>();
 
+    public User() {}
+    public User(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
