@@ -1,6 +1,6 @@
 # Tortoise
 
-A web-based version control platform built using **Spring Boot**, **Spring Web**, **H2 Database**, and **Thymeleaf**.  
+A web-based version control platform built using **Spring Boot**, **Spring Web**, **H2 Database**, **Thymeleaf** and **Boostrap**.  
 The goal of this application is to manage collaborative repositories with structured user roles and detailed bug reporting.
 
 ---
@@ -60,7 +60,7 @@ Each repository has a dedicated page offering:
 ## 🛠 Tech Stack
 
 - **Backend**: Spring Boot, Spring Web, Spring Security
-- **Database**: H2 (in-memory for development)
+- **Database**: H2 (in-memory for development), JPA
 - **Templating**: Thymeleaf, Bootstrap
 - **Build Tool**: Gradle
 
@@ -70,6 +70,7 @@ Each repository has a dedicated page offering:
 
 ### Prerequisites
 - Java 17+
+- JavaScript
 - Gradle
 - (Optional) IntelliJ IDEA
 
