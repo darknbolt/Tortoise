@@ -36,6 +36,8 @@
                 <input th:field="*{confirmPassword}" type="password" id="confirmPassword" class="form-control"/>
             </div>
 
+            <p th:errors="*{email}" class="alert alert-danger mt-4"></p>
+
             <div th:if="${error}" class="alert alert-danger mt-4">
                 <div th:text="${error}">Invalid Username, Password or Email</div>
             </div>

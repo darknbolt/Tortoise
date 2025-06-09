@@ -1,10 +1,17 @@
 package com.darknbolt.tortoise.Models;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+
 import java.util.Set;
 
 public class UserDTO {
     private String username;
     private String password;
+
+    @NotBlank(message = "{email.required}")
+    @Email(message = "{email.EmailIsInvalid}")
     private String email;
     private String confirmPassword;
     private Set<String> roles;
