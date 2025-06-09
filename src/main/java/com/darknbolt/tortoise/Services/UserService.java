@@ -1,15 +1,14 @@
 package com.darknbolt.tortoise.Services;
 
-import com.darknbolt.tortoise.Models.User;
-import com.darknbolt.tortoise.Models.UserDTO;
-import com.darknbolt.tortoise.Models.UserDTOMapper;
-import com.darknbolt.tortoise.Models.UserRole;
+import com.darknbolt.tortoise.Entities.User;
+import com.darknbolt.tortoise.DTOs.UserDTO;
+import com.darknbolt.tortoise.Mappers.UserDTOMapper;
+import com.darknbolt.tortoise.Entities.UserRole;
 import com.darknbolt.tortoise.Repositories.UserRepository;
 import com.darknbolt.tortoise.Repositories.UserRoleRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
 import java.util.Optional;
 
 @Service

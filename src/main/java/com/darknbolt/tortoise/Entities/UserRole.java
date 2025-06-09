@@ -1,4 +1,4 @@
-package com.darknbolt.tortoise.Models;
+package com.darknbolt.tortoise.Entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

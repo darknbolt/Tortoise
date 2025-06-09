@@ -1,6 +1,6 @@
 package com.darknbolt.tortoise.Repositories;
 
-import com.darknbolt.tortoise.Models.User;
+import com.darknbolt.tortoise.Entities.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

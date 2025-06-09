@@ -1,6 +1,6 @@
 package com.darknbolt.tortoise.Controllers;
 
-import com.darknbolt.tortoise.Models.UserDTO;
+import com.darknbolt.tortoise.DTOs.UserDTO;
 import com.darknbolt.tortoise.Services.PasswordValidatorService;
 import com.darknbolt.tortoise.Services.UserService;
 import jakarta.validation.Valid;
@@ -10,8 +10,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-
-import java.util.Objects;
 
 @Controller
 public class AuthController {

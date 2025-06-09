@@ -1,4 +1,8 @@
-package com.darknbolt.tortoise.Models;
+package com.darknbolt.tortoise.Mappers;
+
+import com.darknbolt.tortoise.DTOs.UserDTO;
+import com.darknbolt.tortoise.Entities.User;
+import com.darknbolt.tortoise.Entities.UserRole;
 
 import java.util.stream.Collectors;
 

@@ -1,6 +1,6 @@
 package com.darknbolt.tortoise.Repositories;
 
-import com.darknbolt.tortoise.Models.UserRole;
+import com.darknbolt.tortoise.Entities.UserRole;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
